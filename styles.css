@@ -1,0 +1,40 @@
+/* Add some basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  background-color: #f4f4f4;
+}
+
+#films {
+  list-style: none;
+  padding: 0;
+}
+
+#films li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#movie-details {
+  margin-left: 20px;
+}
+
+#movie-details img {
+  width: 200px;
+  height: auto;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
