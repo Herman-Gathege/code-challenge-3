@@ -1,40 +1,102 @@
-/* Add some basic styling */
+
+
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
 }
 
 .container {
   display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 aside {
-  width: 200px;
-  background-color: #f4f4f4;
+  width: 30%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #e0e0e0;
 }
 
 #films {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
-#films li {
+.film.item {
   padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
 }
 
-#movie-details {
-  margin-left: 20px;
+.film.item:hover {
+  background-color: #f0f0f0;
 }
 
-#movie-details img {
-  width: 200px;
+main {
+  width: 70%;
+  padding: 20px;
+}
+
+#movie-poster {
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin: 0 auto 20px;
+  border-radius: 5px;
 }
 
-button {
+#movie-title {
+  text-align: center;
+  color: #1a1a1a;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#buy-ticket {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #4CAF50;
   color: white;
   border: none;
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#buy-ticket:hover {
+  background-color: #45a049;
+}
+
+#buy-ticket:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
